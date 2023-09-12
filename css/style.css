@@ -1,108 +1,105 @@
 @import url(common.css);
 
-
 /* ______________ GLOBAL______________________ */
-body{
-background-color: #feedd9;
+body {
+  background-color: #feedd9;
 }
-.conteiner{
-	width: 1200px;
-	margin: 0 auto;
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.top{
-	padding: 20px 0px 20px 0px;
+.top {
+  padding: 20px 0px 20px 0px;
 }
 
 /* ______________ LINE 1 ______________________ */
-.line_1{
-	background: #00ffff;
-	font-size: 0px;
+.line_1 {
+  background: #00ffff;
+  font-size: 0px;
 }
 
 .line_1 > div {
-	display: inline-block;
-	font-size: 35px;
-	width: 400px;
-	height: 400px;
-	border: 1px solid red;
-	overflow: hidden;
+  display: inline-block;
+  font-size: 35px;
+  width: 400px;
+  height: 400px;
+  border: 1px solid red;
+  overflow: hidden;
 }
 
 /* ______________ LINE 2 ______________________ */
-.line_2{
-	background:#adff2f;
-	font-size: 0px;
+.line_2 {
+  background: #adff2f;
+  font-size: 0px;
 }
 
-.line_2 > div{
-	display: inline-block;
-	font-size: 35px;
-	vertical-align: middle;
-	
+.line_2 > div {
+  display: inline-block;
+  font-size: 35px;
+  vertical-align: middle;
 }
 
-.line_2_block_1_cell{
-	width: 800px;
-	height: 200px;
-	border: 1px solid red;
-	overflow: hidden;
+.line_2_block_1_cell {
+  width: 800px;
+  height: 200px;
+  border: 1px solid red;
+  overflow: hidden;
 }
 
-.line_2_block_2_cell{
-	width: 400px;
-	height: calc(400px/3);
-	border: 1px solid red;
-	overflow: hidden;
-	
+.line_2_block_2_cell {
+  width: 400px;
+  height: calc(400px / 3);
+  border: 1px solid red;
+  overflow: hidden;
 }
 
 /* ______________ LINE 3 ______________________ */
-.line_3{
-	background: #ff8c00;
-	font-size: 0px;
+.line_3 {
+  background: #ff8c00;
+  font-size: 0px;
 }
 
-.line_3 > div{
-	display: inline-block;
-	font-size: 35px;
-	vertical-align: middle;
+.line_3 > div {
+  display: inline-block;
+  font-size: 35px;
+  vertical-align: middle;
 }
 
-.line_3_block_1{
-	width: 400px;
-	height: 400px;
-	border: 1px solid red;
-	overflow: hidden;
+.line_3_block_1 {
+  width: 400px;
+  height: 400px;
+  border: 1px solid red;
+  overflow: hidden;
 }
 
-.line_3_block_2_top{
-	border: 1px solid red;
-	width: 800px;
-	height: 200px;
-	overflow: hidden;
+.line_3_block_2_top {
+  border: 1px solid red;
+  width: 800px;
+  height: 200px;
+  overflow: hidden;
 }
 
-.line_3_block_2_bottom > div{
-	display: inline-block;
-	font-size: 35px;
-	vertical-align: middle;
+.line_3_block_2_bottom > div {
+  display: inline-block;
+  font-size: 35px;
+  vertical-align: middle;
 }
 
-.line_3_block_2_bottom{
-	font-size: 0px;
-	overflow: hidden;
+.line_3_block_2_bottom {
+  font-size: 0px;
+  overflow: hidden;
 }
 
-.line_3_block_2_bottom_block_1_cell{
-	border: 1px solid red;
-	width: 400px;
-	height: 200px;
+.line_3_block_2_bottom_block_1_cell {
+  border: 1px solid red;
+  width: 400px;
+  height: 200px;
 }
 
-.line_3_block_2_bottom_block_2_cell{
-	border: 1px solid red;
-	width: 400px;
-	height: 100px;
-	overflow: hidden;
+.line_3_block_2_bottom_block_2_cell {
+  border: 1px solid red;
+  width: 400px;
+  height: 100px;
+  overflow: hidden;
 }
