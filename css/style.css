@@ -17,29 +17,29 @@ div {
 	outline: 3px solid red;
 }
 
+.clear {
+	clear: left;
+}
 /* ______________ LINE 1 ______________________ */
 .line_1 {
   background: #00ffff;
-  font-size: 0px;
-}
+ }
 
-.line_1 > div {
-  display: inline-block;
-  font-size: 35px;
+.line_1 > div:not(:last-child) {
+  font-size: 35px; 
+  float: left;
   width: 400px;
   height: 400px;
-  /* outline: 2px solid red; */
   overflow: hidden;
 }
 
 /* ______________ LINE 2 ______________________ */
 .line_2 {
   background: #adff2f;
-  font-size: 0px;
-}
+ }
 
-.line_2 > div {
-  display: inline-block;
+.line_2 > div:not(:last-child) {
+  float: left;
   font-size: 35px;
   vertical-align: middle;
 }
@@ -47,25 +47,22 @@ div {
 .line_2_block_1_cell {
   width: 800px;
   height: 200px;
-  /* outline: 2px solid red; */
   overflow: hidden;
 }
 
 .line_2_block_2_cell {
   width: 400px;
   height: calc(400px / 3);
-  /* outline: 2px solid red; */
   overflow: hidden;
 }
 
 /* ______________ LINE 3 ______________________ */
 .line_3 {
   background: #ff8c00;
-  font-size: 0px;
 }
 
-.line_3 > div {
-  display: inline-block;
+.line_3 > div:not(:last-child) {
+  float: left;
   font-size: 35px;
   vertical-align: middle;
 }
@@ -73,37 +70,37 @@ div {
 .line_3_block_1 {
   width: 400px;
   height: 400px;
-  /* outline: 2px solid red; */
   overflow: hidden;
 }
 
 .line_3_block_2_top {
-  /* outline: 2px solid red; */
   width: 800px;
   height: 200px;
   overflow: hidden;
 }
 
 .line_3_block_2_bottom > div {
-  display: inline-block;
+  float: left;
   font-size: 35px;
   vertical-align: middle;
 }
 
 .line_3_block_2_bottom {
-  font-size: 0px;
   overflow: hidden;
 }
 
 .line_3_block_2_bottom_block_1_cell {
-  /* outline: 2px solid red; */
   width: 400px;
   height: 200px;
 }
 
 .line_3_block_2_bottom_block_2_cell {
-  /* outline: 2px solid red;	 */
   width: 400px;
   height: 100px;
   overflow: hidden;
+}
+
+
+p:hover{
+	background: white;
 }
