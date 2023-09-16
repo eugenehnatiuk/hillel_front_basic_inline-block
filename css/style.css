@@ -16,7 +16,7 @@ body {
 div {
   outline: 3px solid red;
 }
-
+/* clear ::after задает скрытый inline елемент, переводим его в block  */
 .clear::after {
   content: "";
   display: block;
