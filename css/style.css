@@ -17,15 +17,20 @@ div {
   outline: 3px solid red;
 }
 
-.clear {
+.clear::after {
+  content: "";
+  display: block;
   clear: left;
 }
 /* ______________ LINE 1 ______________________ */
 .line_1 {
   background: #00ffff;
 }
+.line_1 > div:hover {
+  color: transparent;
+}
 
-.line_1 > div:not(:last-child) {
+.line_1 > div {
   font-size: 35px;
   float: left;
   width: 400px;
@@ -37,8 +42,11 @@ div {
 .line_2 {
   background: #adff2f;
 }
+.line_2 > div > div:hover {
+  color: transparent;
+}
 
-.line_2 > div:not(:last-child) {
+.line_2 > div {
   float: left;
   font-size: 35px;
   vertical-align: middle;
@@ -61,7 +69,20 @@ div {
   background: #ff8c00;
 }
 
-.line_3 > div:not(:last-child) {
+.line_3_block_1:hover {
+  color: transparent;
+}
+.line_3_block_2_top:hover {
+  color: transparent;
+}
+.line_3_block_2_bottom_block_1_cell:hover {
+  color: transparent;
+}
+.line_3_block_2_bottom_block_2_cell:hover {
+  color: transparent;
+}
+
+.line_3 > div {
   float: left;
   font-size: 35px;
   vertical-align: middle;
@@ -98,8 +119,4 @@ div {
   width: 400px;
   height: 100px;
   overflow: hidden;
-}
-
-p:hover {
-  background: white;
 }
