@@ -14,19 +14,19 @@ body {
 }
 
 div {
-	outline: 3px solid red;
+  outline: 3px solid red;
 }
 
 .clear {
-	clear: left;
+  clear: left;
 }
 /* ______________ LINE 1 ______________________ */
 .line_1 {
   background: #00ffff;
- }
+}
 
 .line_1 > div:not(:last-child) {
-  font-size: 35px; 
+  font-size: 35px;
   float: left;
   width: 400px;
   height: 400px;
@@ -36,7 +36,7 @@ div {
 /* ______________ LINE 2 ______________________ */
 .line_2 {
   background: #adff2f;
- }
+}
 
 .line_2 > div:not(:last-child) {
   float: left;
@@ -100,7 +100,6 @@ div {
   overflow: hidden;
 }
 
-
-p:hover{
-	background: white;
+p:hover {
+  background: white;
 }
