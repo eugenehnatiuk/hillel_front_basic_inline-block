@@ -52,9 +52,9 @@ div {
   vertical-align: middle;
 }
 
-.line_2_block_1{
-	width: 800px;
-	overflow: hidden
+.line_2_block_1 {
+  width: 800px;
+  overflow: hidden;
 }
 
 .line_2_block_1_cell {
@@ -62,8 +62,8 @@ div {
   overflow: hidden;
 }
 
-.line_2_block_2{
-	width: 400px;
+.line_2_block_2 {
+  width: 400px;
 }
 .line_2_block_2_cell {
   height: calc(400px / 3);
