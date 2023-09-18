@@ -10,7 +10,7 @@ body {
 }
 
 .top {
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0px;
 }
 
 div {
@@ -20,7 +20,7 @@ div {
 .clear::after {
   content: "";
   display: block;
-  clear: left;
+  clear: both;
 }
 /* ______________ LINE 1 ______________________ */
 .line_1 {
@@ -52,14 +52,20 @@ div {
   vertical-align: middle;
 }
 
+.line_2_block_1{
+	width: 800px;
+	overflow: hidden
+}
+
 .line_2_block_1_cell {
-  width: 800px;
   height: 200px;
   overflow: hidden;
 }
 
+.line_2_block_2{
+	width: 400px;
+}
 .line_2_block_2_cell {
-  width: 400px;
   height: calc(400px / 3);
   overflow: hidden;
 }
