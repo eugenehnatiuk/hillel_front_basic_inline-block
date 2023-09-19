@@ -15,24 +15,16 @@ body {
 
 div {
   outline: 3px solid red;
+  font-size: 35px;
 }
-/* clear ::after задает скрытый inline елемент, переводим его в block  */
-.clear::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+
 /* ______________ LINE 1 ______________________ */
 .line_1 {
   background: #00ffff;
-}
-.line_1 > div:hover {
-  color: transparent;
+  display: flex;
 }
 
 .line_1 > div {
-  font-size: 35px;
-  float: left;
   width: 400px;
   height: 400px;
   overflow: hidden;
@@ -41,15 +33,7 @@ div {
 /* ______________ LINE 2 ______________________ */
 .line_2 {
   background: #adff2f;
-}
-.line_2 > div > div:hover {
-  color: transparent;
-}
-
-.line_2 > div {
-  float: left;
-  font-size: 35px;
-  vertical-align: middle;
+  display: flex;
 }
 
 .line_2_block_1 {
@@ -64,7 +48,8 @@ div {
 
 .line_2_block_2 {
   width: 400px;
-}
+ }
+
 .line_2_block_2_cell {
   height: calc(400px / 3);
   overflow: hidden;
@@ -73,25 +58,7 @@ div {
 /* ______________ LINE 3 ______________________ */
 .line_3 {
   background: #ff8c00;
-}
-
-.line_3_block_1:hover {
-  color: transparent;
-}
-.line_3_block_2_top:hover {
-  color: transparent;
-}
-.line_3_block_2_bottom_block_1_cell:hover {
-  color: transparent;
-}
-.line_3_block_2_bottom_block_2_cell:hover {
-  color: transparent;
-}
-
-.line_3 > div {
-  float: left;
-  font-size: 35px;
-  vertical-align: middle;
+  display: flex;
 }
 
 .line_3_block_1 {
@@ -106,10 +73,8 @@ div {
   overflow: hidden;
 }
 
-.line_3_block_2_bottom > div {
-  float: left;
-  font-size: 35px;
-  vertical-align: middle;
+.line_3_block_2_bottom {
+  display: flex;
 }
 
 .line_3_block_2_bottom {
