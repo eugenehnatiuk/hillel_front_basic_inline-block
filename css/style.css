@@ -16,6 +16,16 @@ body {
 div {
   outline: 3px solid red;
   font-size: 35px;
+  overflow: hidden;
+}
+.line_1 > div:hover,
+.line_2 > div > div:hover,
+.line_3_block_1:hover,
+.line_3_block_2_top:hover,
+.line_3_block_2_bottom_block_1_cell:hover,
+.line_3_block_2_bottom_block_2_cell:hover {
+  font-size: 50px;
+  font-weight: bold;
 }
 
 /* ______________ LINE 1 ______________________ */
@@ -27,32 +37,43 @@ div {
 .line_1 > div {
   width: 400px;
   height: 400px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ______________ LINE 2 ______________________ */
 .line_2 {
   background: #adff2f;
   display: flex;
+  height: 400px;
 }
 
 .line_2_block_1 {
   width: 800px;
-  overflow: hidden;
+}
+.line_2_block_1 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .line_2_block_1_cell {
-  height: 200px;
-  overflow: hidden;
+  height: 50%;
 }
 
 .line_2_block_2 {
-  width: 400px;
- }
+  width: calc(100% / 3);
+}
 
 .line_2_block_2_cell {
-  height: calc(400px / 3);
-  overflow: hidden;
+  height: calc(100% / 3);
+}
+
+.line_2_block_2 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ______________ LINE 3 ______________________ */
@@ -64,30 +85,35 @@ div {
 .line_3_block_1 {
   width: 400px;
   height: 400px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .line_3_block_2_top {
   width: 800px;
   height: 200px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .line_3_block_2_bottom {
   display: flex;
 }
 
-.line_3_block_2_bottom {
-  overflow: hidden;
-}
-
 .line_3_block_2_bottom_block_1_cell {
   width: 400px;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .line_3_block_2_bottom_block_2_cell {
   width: 400px;
   height: 100px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
