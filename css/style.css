@@ -63,7 +63,7 @@ div {
 }
 
 .line_2_block_2 {
-  width: calc(100% / 3);
+  width: 400px;
 }
 
 .line_2_block_2_cell {
